@@ -28,7 +28,7 @@ export default function Login() {
     try {
       setError("");
       await login(email, password);
-      navigate("/dashboard");
+      navigate("/");
     } catch {
       setError("Failed to log in");
     }
@@ -38,7 +38,7 @@ export default function Login() {
 
   useEffect(() => {
     if (currentUser) {
-      navigate("/dashboard");
+      navigate("/");
     }
   }, [currentUser, navigate]);
 
@@ -100,7 +100,7 @@ export default function Login() {
             </Button>
             <Grid container>
               <Grid item xs>
-                <Link to='forgot-password' >Forgot Password?</Link>
+                <Link to='/forgot-password' >Forgot Password?</Link>
               </Grid>
               <Grid item>
                 <Link to='/signup'>

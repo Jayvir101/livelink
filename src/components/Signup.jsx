@@ -48,7 +48,7 @@ export default function Signup() {
 
   useEffect(() => {
     if (currentUser) {
-      navigate("/dashboard");
+      navigate("/");
     }
   });
 
@@ -150,7 +150,7 @@ export default function Signup() {
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
-                <Link to="/">
+                <Link to="/login">
                   Already have an account? Sign in
                 </Link>
               </Grid>

@@ -39,7 +39,7 @@ export default function ResetPassword() {
   
     useEffect(() => {
       if (currentUser) {
-        navigate("/dashboard");
+        navigate("/");
       }
     });
   
@@ -90,7 +90,7 @@ export default function ResetPassword() {
           </Button>
           <Grid container justifyContent="center">
             <Grid item>
-              <Link to="/">
+              <Link to="/login">
                 Back to Login
               </Link>
             </Grid>
