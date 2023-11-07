@@ -31,7 +31,7 @@ const Options = ({ children }) => {
               </button>
             </CopyToClipboard>
             <WhatsappShareButton
-              url={`http://localhost:3000`}
+              url={`https://video-chat-frontend-zh7h.onrender.com/`}
               title={`Join this meeting with the given code "${me}"\n`}
               separator="Link: "
             >
