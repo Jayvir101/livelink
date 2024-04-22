@@ -5,7 +5,7 @@ import { UserAuth } from "./AuthContext";
 
 const SocketContext = createContext();
 
-const socket = io("https://video-chat-backend-uapz.onrender.com");
+const socket = io("https://livelink-backend.onrender.com/");
 
 const ContextProvider = ({ children }) => {
   const [callAccepted, setCallAccepted] = useState(false);
