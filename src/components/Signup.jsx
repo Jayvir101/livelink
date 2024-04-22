@@ -38,7 +38,7 @@ export default function Signup() {
       setLoading(true);
       const username=firstName+" "+lastName
       await signup(username,email, password);
-      navigate("/dashboard");
+      navigate("/");
     } catch (e) {
       setError(`Error: ${e.message}. Failed to create an account`);
     }
